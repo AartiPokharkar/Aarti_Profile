@@ -1,106 +1,158 @@
 html {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  body {
-    margin: 0;
-    color: antiquewhite;
-  }
-.banner {
-	background:url(../images/bck2.jpg)no-repeat center 0px;
-	background-size:cover;
-	position: relative;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  scroll-behavior: smooth;
 }
 
-.banner-info{
-	padding: 3.5em 0;
+body {
+  margin: 0;
+  color: antiquewhite;
 }
+
+#banner {
+  background: url(../images/bck2.jpg)no-repeat center 0px;
+  background-size: cover;
+  position: relative;
+}
+
+.banner-info {
+  padding: 3.5em 0;
+}
+
 * {
-    -webkit-box-sizing: border-box;
-    box-sizing: 0;
-  }
+  -webkit-box-sizing: border-box;
+  box-sizing: 0;
+}
+
 @media (min-width: 768px) {
-    .container {
-      width: 750px;
-    }
+  .container {
+    width: 750px;
   }
-  @media (min-width: 992px) {
-    .container {
-      width: 970px;
-    }
-  }
-  @media (min-width: 1200px) {
-    .container {
-      width: 1115px;
-    }
-  }
-  div {
-    display: block;
 }
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1115px;
+  }
+}
+
+div {
+  display: block;
+}
+
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .header-left {
-    float: left;
-    width: 40%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
-  .header-left img {
-    width: 100%;
-    border-radius: 0px 30px 0px 30px; 
-}
-img {
-    vertical-align: middle;
-  }
+
 .header-left {
-    padding: 0;
+  float: left;
+  width: 40%;
 }
-  .header-right {
-    padding-left: 3em;
+
+.header-left img {
+  width: 100%;
+  border-radius: 0px 30px 0px 30px;
 }
+
+img {
+  vertical-align: middle;
+}
+
+.header-left {
+  padding: 0;
+}
+
+.header-right {
+  padding-left: 3em;
+}
+
 .header-right h1 {
-    font-size: 2.5em;
-    color: #ff1493;
-    margin: 0.3em 0 0;
+  font-size: 2.5em;
+  color: #ff1493;
+  margin: 0.3em 0 0;
 }
+
 .header-right h2 {
-    font-size: 1.5em;
-    color: #fff;
-    padding-top: .5em;
-    position: relative;
+  font-size: 1.5em;
+  color: #fff;
+  padding-top: .5em;
+  position: relative;
 }
 
 .header-right h6 {
-    font-size: 1em;
-    color: #C7C7C7;
-    margin-top: 0.8em;
-    letter-spacing: 6px;
+  font-size: 1em;
+  color: #C7C7C7;
+  margin-top: 0.8em;
+  letter-spacing: 6px;
 }
-p {
-    font-size: 1.1em;
-    color: #999;
-    line-height: 1.8em;
-}
-.col-md-4, .col-md-8, .col-md-6{
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
 
-  h1,h2,h3,h4,h5,h6{
-	margin:0;	
-	font-family: 'Overlock', cursive;
+p {
+  font-size: 1.1em;
+  color: #999;
+  line-height: 1.8em;
 }
-body a{
-	text-decoration:none;
-  color:#fff;
+
+.col-md-4, .col-md-8, .col-md-6 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
-body a:hover{
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: 'Overlock', cursive;
+}
+
+body a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body a:hover {
   color: #ff1493;
 }
-.skills, .hobbies .contact {
+/*Nav Css Start*/
+nav {
+  top: 0%;
+  width: 100%;
+  background-color: #283131;
+  position: sticky;
+  top: 0;
+}
+.navigation {
+  padding: 5px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+.navigation ul li {
+  list-style: none;
+  margin: 0 10px;
+  display: inline-block;
+}
+.navigation ul li a:hover {
+  padding: 12px;
+  color: #fc0;
+}
+.navigation ul li a {
+  margin: 8px;
+  padding: 10px;
+  color: #fff;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+/*Nav Css End*/
+
+#skills, #hobbies #contact {
   padding: 3em 0;
 }
 
@@ -110,18 +162,21 @@ body a:hover{
   width: 33.33%;
   padding: 20px;
 }
+
 .column1 {
   align-items: center;
   float: left;
   width: 65% 35%;
   padding: 10px;
 }
+
 /* Clear floats after image containers */
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
+
 h3.title {
   font-size: 4em;
   text-align: center;
@@ -131,26 +186,21 @@ h3.title {
 
 }
 
-@media(max-width:800px){
-  .about, .work, .education, .skills, .portfolio, .contact {
-      padding: 3em 0;
-  }
+#hobbies {
+  background: url(../images/bck2.jpg)no-repeat center 0px;
+  background-size: cover;
 }
 
-.hobbies{
-	background:url(../images/bck2.jpg)no-repeat center 0px;
-	background-size:cover;
-	position: relative;
-}
-
-.contact p {
+#contact p {
   color: #1f1f1f;
   font-weight: 300;
 }
-.contact p a {
+
+#contact p a {
   color: #1f1f1f;
 }
-.contact p a:hover{
+
+#contact p a:hover {
   color: #ff1493;
 }
 
@@ -159,7 +209,8 @@ h3.title {
   text-align: center;
   background: #1F1F1F;
 }
+
 .footer p {
   color: #fff;
-font-size: 1.1em;
+  font-size: 1.1em;
 }
